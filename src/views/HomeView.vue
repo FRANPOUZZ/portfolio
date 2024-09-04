@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import lobby from '../components/lobby.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <lobbby />
   </main>
 </template>
