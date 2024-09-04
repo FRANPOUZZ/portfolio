@@ -28,4 +28,7 @@ footer{
     height:7.5%;
     width: 7.5%;
 }
+div{
+    text-align: center;
+}
 </style>

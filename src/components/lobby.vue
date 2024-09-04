@@ -5,7 +5,18 @@
 <body>
     <header>
     <div>
-        <img id="home" src="/src/assets/home.png" alt="logo d'accueuil" href="#">
+        <a href="#"><img id="home" src="/src/assets/home.png" alt="logo d'accueuil"></a>
+    </div>
+    <div >
+        <nav>
+            <ul>
+                <li class="navbutton"><a href="#"><img id="menu"src="/src/assets/menu.png" alt="menu nav déroulant"></a></li>
+                <li class="navlist">1</li>
+                <li class="navlist">2</li>
+                <li class="navlist">3</li>
+            </ul>
+        </nav>
+        
     </div>
     <h1>Portfolio</h1>
 </header>
@@ -29,5 +40,25 @@ h1{
 #home{
     height: 2.5%;
     width: 2.5%;
+}
+div{
+    text-align: left;
+}
+#menu{
+    height: 2.5%;
+    width: 2.5%;
+}
+ul{
+    text-align: left;
+    padding-left: 2px;
+}
+.navlist{
+    display: none;
+}
+.navbutton{
+    display: block;
+}
+.navbutton:hover .navlist{
+    display: block;
 }
 </style>
