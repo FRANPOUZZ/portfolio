@@ -8,9 +8,11 @@
       <lobby/>
     </header>
     <main>
-      <CV/>
-      <cahierdescharges/>
-      <espace_commentaire/>
+      <div>
+        <CV/>
+        <cahierdescharges/>
+        <espace_commentaire/>
+      </div>
     </main>
     <footer>
       <foot/>
@@ -28,5 +30,11 @@ import espace_commentaire from '@/components/espace_commentaire.vue';
 </script>
 
 <style scoped>
-
+div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1000px;
+  gap: 50px;
+}
 </style>
