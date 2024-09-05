@@ -7,14 +7,16 @@
         <p>
           <strong>Date de création: </strong>9/01/2024 <br>
           <strong>Technologies utilisées: </strong> HTML et CSS <br>
-          <strong><a href="/src/assets/CV-de-Fran-ois-Croizer-main/index.html" target="blank">Lien vers le CV</a></strong><br>
-          <strong><a href="https://github.com/FRANPOUZZ/CV-de-Fran-ois-Croizer" target="blank">Lien vers le repository</a></strong><br>
+          <strong><a id="linkcv" href="/src/assets/CV-de-Fran-ois-Croizer-main/index.html" target="blank">Voir le CV</a></strong><br>
+          <strong><a id="linkrep" href="https://github.com/FRANPOUZZ/CV-de-Fran-ois-Croizer" target="blank">Voir vers le repository</a></strong><br>
           <button id="closeModalBtn" @click="closeModal">Fermer</button>
         </p>
       </div>
       <article id="articleCV" @click="openModal">
-        <img id="CV" src="/src/assets/Photo CV.png" alt="Photo du CV en html" />
-        <a href="#"><h2 id="CVtitle">CV en HTML</h2></a>
+        <a id="cvicon" href="#">
+            <img id="CV" src="/src/assets/Photo CV.png" alt="Photo du CV en html" />
+            <h2 id="CVtitle">CV en HTML</h2>
+        </a>
       </article>
     </body>
   </template>
@@ -78,17 +80,29 @@
   #closeModalBtn {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: white;
-    border: 1px solid gray;
-    border-radius: 5px;
+    background-color: #E59560;
+    border: 0px solid gray;
+    border-radius: 0;
     cursor: pointer;
   }
   
   #closeModalBtn:hover {
-    background-color: #f0f0f0;
+    background-color: #e58a60;
   }
   #photocv{
     height: 75%;
     width: 50%;
+  }
+  #cvicon{
+    text-decoration: none;
+    color: black;
+  }
+  #linkcv{
+    text-decoration: none;
+    color: #1D3124;
+  }
+  #linkrep{
+    text-decoration: none;
+    color: #1D3124;
   }
   </style>

@@ -9,15 +9,15 @@
         <p>
           <strong>Date de création: </strong>13/03/2024 <br>
           <strong>Technologies utilisées: </strong>HTML et JavaScript<br>
-          <strong><a href="/src/assets/espace_commentaire-main/index.html" target="blank">voir l'espace commentaire</a></strong><br>
-          <strong><a href="https://github.com/FRANPOUZZ/espace_commentaire" target="blank">voir le repository</a></strong><br>
+          <strong><a id="linkec" href="/src/assets/espace_commentaire-main/index.html" target="blank">voir l'espace commentaire</a></strong><br>
+          <strong><a id="repec" href="https://github.com/FRANPOUZZ/espace_commentaire" target="blank">voir le repository</a></strong><br>
           <button id="closeModalBtn" @click="closeModal">Fermer</button>
         </p>
       </div>
         <article @click="openModal">
-            <a href="#">
+            <a id="ecicon"href="#">
                 <img id="EC"src="/src/assets/éspace_commentaire.png" alt="">
-                <p id="EClink">Espace commentaire dynamique</p>
+                <h2 id="EClink">Espace commentaire dynamique</h2>
             </a>
         </article>
     </body>
@@ -76,17 +76,29 @@
   #closeModalBtn {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: white;
-    border: 1px solid gray;
-    border-radius: 5px;
+    background-color: #E59560;
+    border: 0px solid gray;
+    border-radius: 0px;
     cursor: pointer;
   }
   
   #closeModalBtn:hover {
-    background-color: #f0f0f0;
+    background-color: #e58a60;;
   }
   #photoec{
     height: 75%;
     width: 50%;
+  }
+  #ecicon{
+    text-decoration: none;
+    color: black;
+  }
+  #linkec{
+    text-decoration: none;
+    color: #1D3124;
+  }
+  #repec{
+    text-decoration: none;
+    color: #1D3124;
   }
     </style>

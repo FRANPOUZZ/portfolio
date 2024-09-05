@@ -9,12 +9,12 @@
         <p>
           <strong>Date de création: </strong>16/01/2024 <br>
           <strong>Technologies utilisées: </strong> logiciel de traitement de texte<br>
-          <strong><a href="/src/assets/Cahier des chargers..pdf" target="blank">voir le cahier des charges</a></strong><br>
+          <strong><a id="linkcdc" href="/src/assets/Cahier des charges..pdf" target="blank">voir le cahier des charges</a></strong><br>
           <button id="closeModalBtn" @click="closeModal">Fermer</button>
         </p>
       </div>
         <article @click="openModal">
-            <a href="#">
+            <a id="cdcicon" href="#">
                 <img id="CDC"src="/src/assets/photo cahier des charges.png" alt="apercu du cahier des charges">
                 <h2 id="CDClink">Cahier des charges</h2>
             </a>
@@ -75,17 +75,25 @@
   #closeModalBtn {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: white;
-    border: 1px solid gray;
-    border-radius: 5px;
+    background-color: #E59560;
+    border: 0px solid gray;
+    border-radius: 0px;
     cursor: pointer;
   }
   
   #closeModalBtn:hover {
-    background-color: #f0f0f0;
+    background-color: #e58a60;
   }
   #photocdc{
     height: 75%;
     width: 50%;
+  }
+  #cdcicon{
+    text-decoration: none;
+    color: black;
+  }
+  #linkcdc{
+    text-decoration: none;
+    color: #1D3124;
   }
     </style>
