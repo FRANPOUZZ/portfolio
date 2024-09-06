@@ -8,32 +8,25 @@
       <lobby/>
     </header>
     <main>
-      <div class="div1">
-        <description/>
-        <formu/>
-      </div>
-      <div id="div2">
-        <h2><strong>Projets réalisés</strong></h2>
-        <CV/>
-        <cahierdescharges/>
-        <espace_commentaire/>
-      </div>
+      <div1/>
+      <div2/>
     </main>
     <footer>
       <foot/>
     </footer>
-
   </body>
 </template>
 
 <script setup>
+import div1 from './components/div1.vue'
+import div2 from './components/div2.vue'
 import formu from '@/components/formu.vue'
 import lobby from '@/components/lobby.vue'
 import foot from '@/components/foot.vue'
 import CV from '@/components/CV.vue'
 import cahierdescharges from './components/cahierdescharges.vue';
 import espace_commentaire from '@/components/espace_commentaire.vue';
-import description from '@/components/desciption.vue';
+import description from '@/components/description.vue';
 </script>
 
 <style scoped>
@@ -41,23 +34,10 @@ import description from '@/components/desciption.vue';
 body{
   font-family: "Reddit Sans Condensed", sans-serif;
 }
-div{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 1000px;
-  gap: 50px;
-}
 main{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-h2{
-  width: 1000px;
-}
-.div1{
-  display: flex;
-  flex-direction: column;
-}
+
 </style>

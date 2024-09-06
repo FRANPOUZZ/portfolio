@@ -12,7 +12,7 @@
           </li>
         </ul>
         <ul v-if="isMenuOpen" class="navlist">
-          <li><a href="desciption.vue">Présentation</a></li>
+          <li><a href="description.vue">Présentation</a></li>
           <li><a href="App.vue/div2">Projets réalisés</a></li>
           <li><a href="formu.vue">Me contacter</a></li>
         </ul>
@@ -28,7 +28,7 @@
     isMenuOpen.value = !isMenuOpen.value;
   };
   import formu from '@/components/formu.vue';
-  import description from '@/components/desciption.vue';
+  import description from '@/components/description.vue';
   import App from '@/App.vue';
   </script>
   
@@ -39,7 +39,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    min-width: 100%;
     position: relative;
   }
   
@@ -74,26 +74,34 @@
     list-style: none;
     padding-left: 0;
     margin: 0;
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #C3CBD6;
+    border: 1px solid #C3CBD6;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    right: 10px;
-    top: 60px;
+    position: fixed;
+    left: 15px;
+    top: 100px;
     z-index: 1;
+    border-radius: 10%;
   }
   
   .navlist li {
     list-style: none;
     padding: 10px;
     cursor: pointer;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #C3CBD6;
+    color: black;
   }
   
   .navlist li:hover {
     background-color: #f0f0f0;
   }
-  
+  .navlist li a{
+    color: black;
+    text-decoration: none;
+  }
+  .navlist li a:hover{
+    text-decoration: underline;
+  }
   #homebtn {
     position: fixed;
     left: 10px;
