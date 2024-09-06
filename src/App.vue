@@ -10,6 +10,7 @@
     <main>
       <div1/>
       <div2/>
+      <RouterView/>
     </main>
     <footer>
       <foot/>
@@ -27,6 +28,7 @@ import CV from '@/components/CV.vue'
 import cahierdescharges from './components/cahierdescharges.vue';
 import espace_commentaire from '@/components/espace_commentaire.vue';
 import description from '@/components/description.vue';
+import { RouterView } from 'vue-router';
 </script>
 
 <style scoped>

@@ -2,6 +2,7 @@
     <header>
       <div id="homebtn">
         <a href="/App.vue">
+            <router-link to="/"></router-link>
           <img id="home" src="/src/assets/home.png" alt="logo d'accueil" />
         </a>
       </div>
