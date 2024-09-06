@@ -15,10 +15,10 @@
         </p>
       </div>
         <article @click="openModal">
-            <a id="ecicon"href="#">
+            <div id="ecicon">
                 <img id="EC"src="/src/assets/éspace_commentaire.png" alt="">
                 <h2 id="EClink">Espace commentaire dynamique</h2>
-            </a>
+            </div>
         </article>
     </body>
     </template>
@@ -46,6 +46,7 @@
         background-color: #BACEC1;
         border-color: #BACEC1;
         box-shadow: 10px 10px 8px 5px gray;
+        cursor: pointer;
     }
     #EC{
         height: 264.734px;

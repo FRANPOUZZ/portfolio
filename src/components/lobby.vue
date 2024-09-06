@@ -1,63 +1,111 @@
 <template>
-<head>
-
-</head>
-<body>
     <header>
-    <div>
-        <a href="#"><img id="home" src="/src/assets/home.png" alt="logo d'accueuil"></a>
-    </div>
-    <div >
-        <nav class="navbar">
-            <ul>
-                <li class="navbutton" onclick="menu()"><a href="#"><img id="menu"src="/src/assets/menu.png" alt="menu nav déroulant"></a></li>
-                <li class="navlist">1</li>
-                <li class="navlist">2</li>
-                <li class="navlist">3</li>
-            </ul>
-        </nav>
-        
-    </div>
-    <h1>Portfolio</h1>
-</header>
-</body>
-</template>
-
-<script setup>
-</script>
-
-<style scoped>
-header{
-    background-color: #F6F4E8;
-    display: block;
-    padding: 2px;
-    position: sticky;
-}
-h1{
+      <div id="homebtn">
+        <a href="/App.vue">
+          <img id="home" src="/src/assets/home.png" alt="logo d'accueil" />
+        </a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li class="navbutton" @click="toggleMenu">
+            <img id="menu" src="/src/assets/menu.png" alt="menu nav déroulant" />
+          </li>
+        </ul>
+        <ul v-if="isMenuOpen" class="navlist">
+          <li><a href="desciption.vue">Présentation</a></li>
+          <li><a href="App.vue/div2">Projets réalisés</a></li>
+          <li><a href="formu.vue">Me contacter</a></li>
+        </ul>
+      </nav>
+      <h1>Portfolio</h1>
+    </header>
+  </template>
+  
+  <script setup>
+  import { ref } from 'vue';
+  const isMenuOpen = ref(false);
+  const toggleMenu = () => {
+    isMenuOpen.value = !isMenuOpen.value;
+  };
+  import formu from '@/components/formu.vue';
+  import description from '@/components/desciption.vue';
+  import App from '@/App.vue';
+  </script>
+  
+  <style scoped>
+  header {
+    background-color: #f6f4e8;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+  
+  h1 {
     text-align: center;
-}
-#home{
-    height: 2.5%;
-    width: 2.5%;
-}
-div{
-    text-align: left;
-}
-#menu{
-    height: 2.5%;
-    width: 2.5%;
-}
-ul{
-    text-align: left;
-    padding-left: 2px;
-}
-.navlist{
-    display: none;
-}
-.navbutton{
-    display: block;
-}
-.navbutton:hover .navlist{
-    display: block;
-}
-</style>
+    flex-grow: 1;
+  }
+  
+  #home {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  
+  #menu {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+  }
+  
+  .navbar {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+  }
+  
+  .navlist {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 10px;
+    top: 60px;
+    z-index: 1;
+  }
+  
+  .navlist li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .navlist li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  #homebtn {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+  }
+  
+  .navbutton {
+    position: fixed;
+    left: 20px;
+    top: 60px;
+  }
+  ul{
+    list-style: none;
+  }
+  </style>

@@ -14,10 +14,10 @@
         </p>
       </div>
         <article @click="openModal">
-            <a id="cdcicon" href="#">
+            <div id="cdcicon">
                 <img id="CDC"src="/src/assets/photo cahier des charges.png" alt="apercu du cahier des charges">
                 <h2 id="CDClink">Cahier des charges</h2>
-            </a>
+            </div>
         </article>
     </body>
     </template>
@@ -44,7 +44,8 @@
     article:hover{
         background-color: #BACEC1;
         border-color: #BACEC1;
-        box-shadow: 10px 10px 8px 5px gray;
+        box-shadow: 10px 10px 8px 5px gray;   
+        cursor: pointer;
     }
     #CDC{
         height: 264.734px;

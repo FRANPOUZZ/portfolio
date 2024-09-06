@@ -8,15 +8,15 @@
           <strong>Date de création: </strong>9/01/2024 <br>
           <strong>Technologies utilisées: </strong> HTML et CSS <br>
           <strong><a id="linkcv" href="/src/assets/CV-de-Fran-ois-Croizer-main/index.html" target="blank">Voir le CV</a></strong><br>
-          <strong><a id="linkrep" href="https://github.com/FRANPOUZZ/CV-de-Fran-ois-Croizer" target="blank">Voir vers le repository</a></strong><br>
+          <strong><a id="linkrep" href="https://github.com/FRANPOUZZ/CV-de-Fran-ois-Croizer" target="blank">Voir le repository</a></strong><br>
           <button id="closeModalBtn" @click="closeModal">Fermer</button>
         </p>
       </div>
       <article id="articleCV" @click="openModal">
-        <a id="cvicon" href="#">
+        <div id="cvicon">
             <img id="CV" src="/src/assets/Photo CV.png" alt="Photo du CV en html" />
             <h2 id="CVtitle">CV en HTML</h2>
-        </a>
+        </div>
       </article>
     </body>
   </template>
@@ -47,6 +47,7 @@
     background-color: #bacec1;
     border-color: #bacec1;
     box-shadow: 10px 10px 8px 5px gray;
+    cursor: pointer;
   }
   
   #CV {

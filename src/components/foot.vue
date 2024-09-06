@@ -21,12 +21,20 @@ footer{
     display: block;
 }
 #github{
+    padding: 10px;
     height: 7.5%;
     width: 7.5%;
 }
+#github:hover{
+    background-color: #c9c6cb;
+}
 #linkedin{
+    padding: 10px;
     height:7.5%;
     width: 7.5%;
+}
+#linkedin:hover{
+    background-color: #c9c6cb; 
 }
 div{
     text-align: center;

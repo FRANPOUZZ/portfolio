@@ -8,8 +8,12 @@
       <lobby/>
     </header>
     <main>
-      <description/>
-      <div>
+      <div class="div1">
+        <description/>
+        <formu/>
+      </div>
+      <div id="div2">
+        <h2><strong>Projets réalisés</strong></h2>
         <CV/>
         <cahierdescharges/>
         <espace_commentaire/>
@@ -23,6 +27,7 @@
 </template>
 
 <script setup>
+import formu from '@/components/formu.vue'
 import lobby from '@/components/lobby.vue'
 import foot from '@/components/foot.vue'
 import CV from '@/components/CV.vue'
@@ -48,7 +53,11 @@ main{
   flex-direction: row;
   justify-content: space-between;
 }
-div{
-  justify-self: right;
+h2{
+  width: 1000px;
+}
+.div1{
+  display: flex;
+  flex-direction: column;
 }
 </style>
