@@ -40,7 +40,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 100%;
+    min-width: 100rem;
     position: relative;
   }
   
