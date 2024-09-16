@@ -3,8 +3,13 @@
     <header v-if="!isNotFoundPage">
       <lobby/>
     </header>
-    <main>
-      <RouterView/> <!-- C'est ici que les composants basés sur les routes apparaîtront -->
+    <div>
+      <RouterView/>
+    </div>
+    <main v-if="!isNotFoundPage">
+      <presentation/>
+      <projects/>
+      <contact/>
     </main>
     <footer v-if="!isNotFoundPage">
       <foot/>
@@ -13,6 +18,9 @@
 </template>
 
 <script setup>
+import presentation from './components/presentation.vue';
+import projects from './components/projects.vue';
+import contact from './components/contact.vue';
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 import lobby from '@/components/lobby.vue';
@@ -26,15 +34,16 @@ const isNotFoundPage = computed(() => route.name === 'NotFound');
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap');
-body {
+div {
   font-family: "Reddit Sans Condensed", sans-serif;
 }
 
 main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   padding-bottom: 15rem;
 }
 </style>
