@@ -1,25 +1,36 @@
 <template>
-    <header>
-      <div id="homebtn">
-        <a href="/App.vue">
-            <router-link to="/"></router-link>
-          <img id="home" src="/src/assets/home.png" alt="logo d'accueil" />
-        </a>
-      </div>
-      <nav class="navbar">
-        <ul>
-          <li class="navbutton" @click="toggleMenu">
-            <img id="menu" src="/src/assets/menu.png" alt="menu nav déroulant" />
-          </li>
-        </ul>
-        <ul v-if="isMenuOpen" class="navlist">
-          <li><a href="description.vue">Présentation</a></li>
-          <li><a href="App.vue/div2">Projets réalisés</a></li>
-          <li><a href="formu.vue">Me contacter</a></li>
-        </ul>
-      </nav>
-      <h1>Portfolio</h1>
-    </header>
+<header>
+    <!-- Bouton Accueil -->
+    <div id="homebtn">
+      <router-link to="/">
+        <img id="home" src="@/assets/home.png" alt="logo d'accueil" />
+      </router-link>
+    </div>
+    
+    <!-- Menu de navigation -->
+    <nav class="navbar">
+      <ul>
+        <!-- Bouton pour dérouler le menu -->
+        <li class="navbutton" @click="toggleMenu">
+          <img id="menu" src="@/assets/menu.png" alt="menu nav déroulant" />
+        </li>
+      </ul>
+      <!-- Liste des liens de navigation affichée lorsque le menu est ouvert -->
+      <ul v-if="isMenuOpen" class="navlist">
+        <li>
+          <router-link to="/description">Présentation</router-link>
+        </li>
+        <li>
+          <router-link to="/divtwo">Projets réalisés</router-link>
+        </li>
+        <li>
+          <router-link to="/formu">Me contacter</router-link>
+        </li>
+      </ul>
+    </nav>
+    
+    <h1>Portfolio</h1>
+  </header>
   </template>
   
   <script setup>

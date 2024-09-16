@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="error">
         <img src="/src/assets/error.png" alt="error image.">
         <h1><strong>404</strong> page not found.</h1>
         <p>la page que vous cherchez est introuvable.</p>
@@ -12,5 +12,7 @@
 </script>
 
 <style>
-
+#error{
+padding-left: 20rem;
+}
 </style>

@@ -4,9 +4,7 @@
         <h2>Présentation</h2>
         <p>François Croizer</p>
         <p>Développeur web débutant de <br>22 ans qui étudie avec le centre européen de formation.</p>
-        <p><strong>Languages maitrisés: </strong>HTML,CSS <br>
-        <strong>Language en cours d'apprentissage: </strong>Javascript</p>
-
+        <p><strong>Languages maitrisés: </strong>HTML,CSS,Javascript <br></p>
     </div>
 </body>
 </template>
