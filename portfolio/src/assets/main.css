@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap');
+header {
+    background-color: #f6f4e8;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100rem;
+    position: relative;
+  }
+  
+  h1 {
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  #home {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  
+  #menu {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+  }
+  
+  .navbar {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+  }
+  
+  .navlist {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    background-color: #C3CBD6;
+    border: 1px solid #C3CBD6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 15px;
+    top: 100px;
+    z-index: 1;
+    border-radius: 10%;
+  }
+  
+  .navlist li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #C3CBD6;
+    color: black;
+  }
+  
+  .navlist li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .navlist li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .navlist li a:hover {
+    text-decoration: underline;
+  }
+  
+  #homebtn {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+  }
+  
+  .navbutton {
+    position: fixed;
+    left: 20px;
+    top: 60px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .navlist li.active a {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  footer{
+    background-color: #f6f4e8;
+    display: block;
+    min-width: 100rem;
+}
+#github{
+    padding: 10px;
+    height: 7.5%;
+    width: 7.5%;
+}
+#github:hover{
+    background-color: #c9c6cb;
+}
+#linkedin{
+    padding: 10px;
+    height:7.5%;
+    width: 7.5%;
+}
+#linkedin:hover{
+    background-color: #c9c6cb; 
+}
+div{
+    text-align: center;
+}
+#presentation{
+    border-radius: 4%;
+    background-color: #B3DEE5;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10% 10% 10% 10%;
+    font-size: 20px;
+}
+#div2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    gap: 50px;
+    padding-top: 10rem;
+  }
+  #project-title{
+    width: 1000px;
+  }
+  #modalOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  #modalCV {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bacec1;
+    height: 500px;
+    min-width: 70rem;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #closeModalBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e59560;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #closeModalBtn:hover {
+    background-color: #e58a60;
+  }
+  
+  #photocv {
+    height: 70%;
+    width: 30rem;
+  }
+  
+  #cvicon {
+    text-decoration: none;
+    color: black;
+  }
+  
+  #linkcv,
+  #linkrep {
+    text-decoration: none;
+    color: #1d3124;
+  }
+  
+  #linkcv:hover,
+  #linkrep:hover {
+    text-decoration: underline;
+  }
+  
+  article {
+    display: block;
+    border: 3px solid none;
+    padding: 0;
+    width: 450px;
+    height: 350px;
+    border-radius: 10%;
+  }
+  
+  article:hover {
+    background-color: #bacec1;
+    border-color: #bacec1;
+    box-shadow: 10px 10px 8px 5px gray;
+    cursor: pointer;
+  }
+  
+  #CV {
+    height: 264.734px;
+    width: 327.75px;
+    border-radius: 10%;
+    border: 3px solid #bacec1;
+  }
+  
+  #CVtitle {
+    text-align: center;
+  }
+  #modalOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  #modalCDC {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bacec1;
+    height: 500px;
+    width: 1000px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #closeModalBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e59560;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #closeModalBtn:hover {
+    background-color: #e58a60;
+  }
+  
+  #photocdc {
+    height: 70%;
+    width: 30rem;
+  }
+  
+  #cdcicon {
+    text-decoration: none;
+    color: black;
+  }
+  
+  #linkcdc {
+    text-decoration: none;
+    color: #1d3124;
+  }
+  
+  #linkcdc:hover {
+    text-decoration: underline;
+  }
+  
+  article {
+    border: 3px solid none;
+    padding: 0;
+    width: 450px;
+    height: 350px;
+    border-radius: 10%;
+  }
+  
+  article:hover {
+    background-color: #bacec1;
+    border-color: #bacec1;
+    box-shadow: 10px 10px 8px 5px gray;
+    cursor: pointer;
+  }
+  
+  #CDC {
+    height: 264.734px;
+    width: 327.75px;
+    border-radius: 10%;
+    border: 3px solid #bacec1;
+  }
+  
+  #CDClink {
+    text-align: center;
+  }
+  #modalOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  #modalEC {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bacec1;
+    height: 500px;
+    width: 1000px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #closeModalBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e59560;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #closeModalBtn:hover {
+    background-color: #e58a60;
+  }
+  
+  #photoec {
+    height: 70%;
+    width: 30rem;
+  }
+  
+  #ecicon {
+    text-decoration: none;
+    color: black;
+  }
+  
+  #linkec,
+  #repec {
+    text-decoration: none;
+    color: #1d3124;
+  }
+  
+  #linkec:hover,
+  #repec:hover {
+    text-decoration: underline;
+  }
+  
+  article {
+    border: 3px solid none;
+    padding: 0;
+    width: 450px;
+    height: 350px;
+    border-radius: 10%;
+  }
+  
+  article:hover {
+    background-color: #bacec1;
+    box-shadow: 10px 10px 8px 5px gray;
+    cursor: pointer;
+  }
+  
+  #EC {
+    height: 264.734px;
+    width: 327.75px;
+    border-radius: 10%;
+    border: 3px solid #bacec1;
+  }
+  
+  #EClink {
+    text-align: center;
+  }
+  #contact-div{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 10rem;
+}
+input{
+    margin: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #BACEC1;
+}
+#message{
+    margin: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #BACEC1;
+    height: 300px;
+    width: 700px;
+}
+#object{
+    width:700px;
+}
+button{
+    margin: 5px;
+    background-color: #E59560;
+    border: none;
+    padding: 10px;
+}
+#webpage {
+  font-family: "Reddit Sans Condensed", sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 15rem;
+}
