@@ -26,30 +26,3 @@ coverage
 *.njsproj
 *.sln
 *.sw?
-
-*.tsbuildinfo
- ../.bash_history
-../.gitconfig
- ../.lesshst
-../.vscode/
- ../.vuerc
- ../AppData/
-../Contacts/
-../Desktop/
-../Documents/
- ../Downloads/
-../Favorites/
-../Links/
- ../Music/
-../NTUSER.DAT
-../NTUSER.DAT{4f36ca8a-e6f7-11ee-8fe3-1cce51c633a8}.TM.blf
-../NTUSER.DAT{4f36ca8a-e6f7-11ee-8fe3-1cce51c633a8}.TMContainer00000000000000000001.regtrans-ms
-../NTUSER.DAT{4f36ca8a-e6f7-11ee-8fe3-1cce51c633a8}.TMContainer00000000000000000002.regtrans-ms
-../OneDrive/
-../Pictures/
-../Saved Games/
-../Searches/
-../Videos/
-../ntuser.dat.LOG1
-../ntuser.dat.LOG2
-../ntuser.ini
