@@ -26,29 +26,20 @@ coverage
 *.njsproj
 *.sln
 *.sw?
-# Ignorer les fichiers système Windows
+# Ignorer les fichiers et dossiers système indésirables
+/../AppData/
+/../Contacts/
+/../Desktop/
+/../Documents/
+/../Downloads/
+/../Favorites/
+/../Links/
+/../Music/
+/../Pictures/
+/../Videos/
+/../NTUSER.DAT*
+/../ntuser.dat.*
+/../OneDrive/
 *.log
-*.ini
-*.dat
-*.blf
-*.regtrans-ms
-NTUSER.DAT
-NTUSER.DAT*
-AppData/
-Contacts/
-Desktop/
-Documents/
-Downloads/
-Favorites/
-Links/
-Music/
-Pictures/
-Saved Games/
-Searches/
-Videos/
-OneDrive/
 .vscode/
-.bash_history
-.gitconfig
-.lesshst
-.vuerc
+
