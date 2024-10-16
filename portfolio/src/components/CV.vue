@@ -1,7 +1,8 @@
 <template>
   <div>
-    <div v-show="isModalVisible" id="modalOverlay" @click.self="closeModal">
-      <div id="modalCV" @click.stop>
+    <!--Fermeture en cliquant en dehors de la modal-->
+    <div id="modalOverlayCV" @click.self="closeModal">
+      <div id="modalCV">
         <h3>CV en HTML</h3>
         <img id="photocv" src="/src/assets/photo_cv.png" alt="Photo CV">
         <p>
@@ -9,10 +10,12 @@
           <strong>Technologies utilisées: </strong> HTML et CSS <br>
           <strong><a id="linkcv" href="/src/assets/CV-de-Fran-ois-Croizer-main/index.html" target="_blank">Voir le CV</a></strong><br>
           <strong><a id="linkrep" href="https://github.com/FRANPOUZZ/CV-de-Fran-ois-Croizer" target="_blank">Voir le repository</a></strong><br>
+          <!--bouton de fermeture de la modal-->
           <button id="closeModalBtn" @click="closeModal">Fermer</button>
         </p>
       </div>
     </div>
+    <!--ouverture de la modale-->
     <article id="articleCV" @click="openModal">
       <div id="cvicon">
         <img id="CV" src="/src/assets/photo_cv.png" alt="Photo du CV en html">
@@ -23,17 +26,28 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import {onMounted, ref} from 'vue';
+//déclaration de modal et modal
+let modal;
+let modalOverlay;
 
-const isModalVisible = ref(false);
+//fonction pour ouvrir la modal
+function openModal() {
+  modal.style.display = "flex";
+  modalOverlay.style.display = "flex";
+}
 
-const openModal = () => {
-  isModalVisible.value = true;
-};
+//fonction pour fermer la modal
+function closeModal() {
+  modal.style.display = "none";
+  modalOverlay.style.display = "none";
+}
 
-const closeModal = () => {
-  isModalVisible.value = false;
-};
+//appel de la modal et de l'overlay avec onMounted
+onMounted(() => {
+modal = document.getElementById("modalCV");
+modalOverlay = document.getElementById("modalOverlayCV");
+})
 </script>
 
 <style scoped>

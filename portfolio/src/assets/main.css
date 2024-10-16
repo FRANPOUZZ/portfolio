@@ -149,8 +149,8 @@ div{
 #project-title{
   width: 1000px;
 }
-#modalOverlay {
-  display: flex;
+#modalOverlayCV {
+  display: none;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -163,7 +163,7 @@ div{
 }
   
 #modalCV {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -216,6 +216,7 @@ article {
   width: 450px;
   height: 350px;
   border-radius: 10%;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
 }
   
 article:hover {
@@ -235,7 +236,7 @@ article:hover {
 #CVtitle {
   text-align: center;
 }
-#modalOverlay {
+#modalOverlayCDC {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -261,19 +262,6 @@ article:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
   
-#closeModalBtn {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #e59560;
-  border: 0;
-  border-radius: 5px;
-  cursor: pointer;
-}
-  
-#closeModalBtn:hover {
-  background-color: #e58a60;
-}
-  
 #photocdc {
   height: 70%;
   width: 30rem;
@@ -293,21 +281,6 @@ article:hover {
   text-decoration: underline;
 }
   
-article {
-  border: 3px solid none;
-  padding: 0;
-  width: 450px;
-  height: 350px;
-  border-radius: 10%;
-}
-  
-article:hover {
-  background-color: #bacec1;
-  border-color: #bacec1;
-  box-shadow: 10px 10px 8px 5px gray;
-  cursor: pointer;
-}
-  
 #CDC {
   height: 264.734px;
   width: 327.75px;
@@ -318,7 +291,7 @@ article:hover {
 #CDClink {
   text-align: center;
 }
-#modalOverlay {
+#modalOverlayEC {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -344,19 +317,6 @@ article:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
   
-#closeModalBtn {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #e59560;
-  border: 0;
-  border-radius: 5px;
-  cursor: pointer;
-}
-  
-#closeModalBtn:hover {
-  background-color: #e58a60;
-}
-  
 #photoec {
   height: 70%;
   width: 30rem;
@@ -376,20 +336,6 @@ article:hover {
 #linkec:hover,
 #repec:hover {
   text-decoration: underline;
-}
-  
-article {
-  border: 3px solid none;
-  padding: 0;
-  width: 450px;
-  height: 350px;
-  border-radius: 10%;
-}
-  
-article:hover {
-  background-color: #bacec1;
-  box-shadow: 10px 10px 8px 5px gray;
-  cursor: pointer;
 }
   
 #EC {

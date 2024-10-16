@@ -2,6 +2,7 @@
   <section id="contact">
     <div id="contact-div">
       <h2>Me contacter</h2>
+      <!--Formulaire de contact-->
       <form @submit.prevent="sendEmail">
         <input type="text" v-model="name" placeholder="Nom"><br>
         <input type="text" v-model="firstName" placeholder="Prénom"><br>
@@ -9,7 +10,7 @@
         <textarea v-model="message" id="message" rows="10" placeholder="Message"></textarea><br>
         <button type="submit">Envoyer</button>
       </form>
-      <p v-if="statusMessage">{{ statusMessage }}</p>
+      <p id="statusMessage" v-if="statusMessage">{{ statusMessage }}</p>
     </div>
   </section>
 </template>
